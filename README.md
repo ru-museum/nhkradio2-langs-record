@@ -1,4 +1,4 @@
-# nhkradio2-langs-record.sh
+# nhkradio2-langs-record
 NHKラジオ第２ 語学番組録音（汎用版）
 
 - これはNHKラジオ第２放送の「語学ラジオ番組」を**自動録音**するものです。
