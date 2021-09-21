@@ -6,7 +6,7 @@ NHKラジオ第２ 語学番組録音（汎用版）
 
 [NHK おうちで学ぼう！for school / 語学](https://www2.nhk.or.jp/gogaku/index.cgi)  
 
-- ロシア語限定版に[nhkradio2-russian-record](https://github.com/ru-museum/nhkradio2-russian-record)があります。
+- ロシア語限定版には [nhkradio2-russian-record](https://github.com/ru-museum/nhkradio2-russian-record) があります。
 
 ### NHKラジオ第2 語学番組表
 
@@ -138,6 +138,11 @@ REC_TIME="00:15:00"
  ```
  # /etc/init.d/cron restart
  ```
+ <br> 
+※ スクリプトが起動されると「作業フォルダ」にシステムファイル（languages.csv）作成されます。
+  <br>
+  <br>
+  
 ## 録音開始時間の微調整  
 - 回線状況や配信（放送時刻）とPCの時計の時刻が正確に合致していない場合など、録音開始時間に**誤差**の生じる場合があります。  
 - 当方の PC の内蔵時計では日本標準時との誤差は 0.2 秒でしたが、**36秒**の遅延調整が必要でした。  
@@ -158,12 +163,12 @@ sleep 40
 ```
 
 ## 実動作前のテスト  
-1. 録音時間を**10秒**程度に設定します・
+1. 録音時間を**10秒**程度に設定します。
  ```
 # 録音時間設定値 ： 10秒
 REC_TIME="00:00:10" 
  ```
-2.  CRON の起動時刻を数分後に設定し再起動します。   
+2.  CRON の起動時刻を数分後に設定し再起動します。
  ```
 # CRON
 49 8 * * 1-5 ……（略）
