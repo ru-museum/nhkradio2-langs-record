@@ -89,6 +89,7 @@ M3U8URL="https://radio-stream.nhk.jp/hls/live/2023501/nhkradiruakr2/master.m3u8"
 COURSE=""
 COURSENUM=""
 COURSENAME=""
+SLPSECONDS=0 # 開始時刻遅延初期値： 秒 -- 変更可能。
 
 # 番組リストファイル
 DATAFILE="${SCRIPT_DIR}/${FILECSV}" # 番組リストファイル
@@ -115,6 +116,7 @@ Usage: $(basename "$0") -i [ID] -c [ p | a ]
   -c [VALUE]    講座が複数(入門編、応用編)あり何れか一方のみを録音する場合：
                 入門編 [p] | 応用編 [a]　で指定します。
                 ※ オプションを無記入の場合、入門編及び応用編共に録音されます。
+  -s [VALUE]    開始時刻を遅延させる： 秒              
                 
 【NHKラジオ第二放送 語学講座番組】(2021年度9月) *講座のID番号を選択します。
 EOM
@@ -124,13 +126,16 @@ EOM
 
 # --------------------------------------------------
 # OPTION 引数別の処理定義
-while getopts ":c:i:h" optKey; do
+while getopts ":c:i:s:h" optKey; do
   case "$optKey" in
     i)
-      COURSENUM="${OPTARG}"
+      COURSENUM="${OPTARG}"  # 指定講座 ID の OPTION 入力値
       ;;
     c)
-      COURSENAME="${OPTARG}" # 入門編・応用編の OPTION
+      COURSENAME="${OPTARG}" # 入門編・応用編の OPTION 入力値
+      ;;
+    s)
+      SLPSECONDS="${OPTARG}" # 開始時刻遅延の OPTION 入力値
       ;;
     '-h'|'--help'|* )
       dspHelp
@@ -199,7 +204,7 @@ REC_TIME="00:15:00"
 
 # 開始時刻を遅延させる： 秒 -- 変更可能。
 # sleep 5m 50s （分：秒）
-sleep 0
+sleep $SLPSECONDS
 
 # 録音したファイルを保存
 if [ COURSENUM ]; then
