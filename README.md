@@ -162,7 +162,7 @@ REC_TIME="00:15:00"
 
 - **username** は、root 或いは使用するユーザー名です（無いとエラーが出ます）。  
 - 作業フォルダを「NHKラジオ語学講座」に設定した場合です。  
-　**/your/directory/name/NHKラジオ語学講座/** は**絶対 PATH**で指定します。
+　**/your/directory/name/NHKラジオ語学講座/** は**絶対 PATH**で指定します。  
   ※ シェルは **bash** を指定して下さい。
  ```
 50 8 * * 1-5 username bash /your/directory/name/NHKラジオ語学講座/nhkradio2-langs-record.sh -i 0
