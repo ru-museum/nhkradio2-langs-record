@@ -102,7 +102,7 @@ NHKラジオ第２ 語学番組録音（汎用版）
 </table>
 
 # 動作環境  
-- Linux（Debian: bash 使用）
+- Linux（Debian: **bash** 使用）
 - ffmpeg のインストールが必要です。
 
 # 録音方法  
@@ -123,7 +123,7 @@ REC_TIME="00:15:00"
 　【例】**0** まいにちロシア語　...  
 　　　　**1** まいにちフランス語　...  
  ```
- # sh ./nhkradio2-langs-record.sh -h
+ # bash ./nhkradio2-langs-record.sh -h
  ``` 
 4. CRON に講座に応じた放送曜日と時刻を登録します。  
 - 設定ファイル： /etc/crontab  
