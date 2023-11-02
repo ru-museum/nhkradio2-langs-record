@@ -223,14 +223,16 @@ REC_TIME="00:00:10"
 - 保存された **m4a** は音声データフォーマットであり、iTunes や通常のプレイヤーで視聴出来ます。 
 
 # 視聴アプリ  
-- 初級編及び応用編のある**フランス語**、**ドイツ語**、**イタリア語**、**スペイン語**を視聴出来るアプリを公開しました。
-- ロシア語版はこちらにあります。[nhkradio2-russian-record](https://github.com/ru-museum/nhkradio2-russian-record)
+- 初級編及び応用編のある**ロシア語**、**フランス語**、**ドイツ語**、**イタリア語**、**スペイン語**を視聴出来るアプリを公開しました。
+- データは編集可能となっています。   
+- **ロシア語限定版**はこちらにあります。[nhkradio2-russian-record](https://github.com/ru-museum/nhkradio2-russian-record)
 
 ## 　Demo
-- 以下で公開用テンプレートをご覧頂けます（**/docs** を参照しています) 
+- 以下で公開用テンプレートをご覧頂けます（**/docs** を参照しています) 。
 - サンプルのダミーファイル（【初級編】第１課、【応用編】第1課）を試聴出来ます。 
-- 操作方法等はアプリの「視聴方法」に詳しく解説しています（初期値は**フランス語**です）。
+- 操作方法等はアプリの「視聴方法」に詳しく解説しています。
 - 2023年度10月からの新シリーズに対応しています。
+- **セキュリティ上ダウンロード後でなくてはデータは読み込み出来ません**。   
   
 　　[GitHub Pages: nhkradio2-langs-record](https://ru-museum.github.io/nhkradio2-langs-record/)  
 　　[https://ru-museum.github.io/nhkradio2-langs-record/](https://ru-museum.github.io/nhkradio2-langs-record/)  
